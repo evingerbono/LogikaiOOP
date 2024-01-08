@@ -2,25 +2,46 @@ package logikaioop;
 
 import java.util.Arrays;
 
-public class Allitasok {
-
-    private String[] tomb;
-
-    public Allitasok(String[] tomb) {
-        this.tomb = tomb;
+public class Allitasok
+{
+    private final String[] allitasok;
+    
+    public Allitasok(String[] allitasok)
+    {
+        this.allitasok = allitasok;
     }
 
-    public String[] getTomb() {
-        return tomb;
+    public String[] getAllitasok()
+    {
+        return allitasok;
     }
 
-    public void setTomb(String[] tomb) {
-        this.tomb = tomb;
+    @Override public String toString()
+    {
+        return "Allitasok{" + "allitasok=" + Arrays.toString(allitasok) + '}';
     }
 
-    @Override
-    public String toString() {
-        return "Allitasok{" + "tomb=" + tomb + '}';
+    @Override public int hashCode()
+    {
+        int hash = 5;
+        hash = 79 * hash + Arrays.deepHashCode(this.allitasok);
+        return hash;
     }
 
+    @Override public boolean equals(Object obj)
+    {
+        if (obj instanceof String[] s)
+        {
+            int i = 0;
+            while (i < allitasok.length && allitasok[i].equals(s[i]))
+            {
+                i++;
+            }
+            return i >= allitasok.length;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
