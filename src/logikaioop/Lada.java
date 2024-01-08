@@ -5,11 +5,6 @@ public class Lada {
     private String anyag, allitas;
     private boolean kincs;
 
-    @Override
-    public String toString() {
-        return "Lada{" + "anyag=" + anyag + ", allitas=" + allitas + ", kincs=" + kincs + '}';
-    }
-
     public Lada(String anyag, String allitas, boolean kincs) {
         this.anyag = anyag;
         this.allitas = allitas;
@@ -38,5 +33,10 @@ public class Lada {
 
     public void setKincs(boolean kincs) {
         this.kincs = kincs;
+    }
+    
+    @Override
+    public String toString() {
+        return "Lada{" + "anyag=" + anyag + ", allitas=" + allitas + ", kincs=" + kincs + '}';
     }
 }
