@@ -1,8 +1,14 @@
 package logikaioop;
 
 public class Lada {
-    private String anyag,allitas;
+
+    private String anyag, allitas;
     private boolean kincs;
+
+    @Override
+    public String toString() {
+        return "Lada{" + "anyag=" + anyag + ", allitas=" + allitas + ", kincs=" + kincs + '}';
+    }
 
     public Lada(String anyag, String allitas, boolean kincs) {
         this.anyag = anyag;
@@ -34,9 +40,4 @@ public class Lada {
         this.kincs = kincs;
     }
 
-    @Override
-    public String toString() {
-        return "Lada{" + "anyag=" + anyag + ", allitas=" + allitas + ", kincs=" + kincs + '}';
-    }
-    
 }
