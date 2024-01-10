@@ -20,7 +20,7 @@ public class Controller {
             System.out.println(lada.getAllitas());
         }
 
-        System.out.println("Melyik:");
+        System.out.print("Melyik: ");
         eredemeny();
        
     }
@@ -36,7 +36,11 @@ public class Controller {
     }
 
     public int beker() {
-        return sc.nextInt()-1;
+         int szam=0;
+         while (szam < 1 || szam > 3){
+             szam = sc.nextInt();
+         };
+        return szam - 1;
     }
 
     public boolean isHelyes(int szam) {
