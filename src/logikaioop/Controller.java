@@ -10,11 +10,11 @@ public class Controller {
     public Controller() {
         tomb = new Lada[3];
         System.out.println("Leírás");
-        tomb[0] = new Lada("arany", "Az 1.állítás", false);
+        tomb[0] = new Lada("arany", "Én rejtem a kincset!", false);
 
-        tomb[1] = new Lada("ezüst", "A 2.állítás", false);
+        tomb[1] = new Lada("ezüst", "Nem én rejtem a kincset!", true);
 
-        tomb[2] = new Lada("bronz", "A 3.állítás", true);
+        tomb[2] = new Lada("bronz", "Az arany hazudik!", false);
 
         for (Lada lada : tomb) {
             System.out.println(lada.getAllitas());
