@@ -16,10 +16,10 @@ public class Controller {
             new Lada("bronz", "Az arany hazudik!", false)
         });
         view = new LadaView();
+        String s = "";
         for (int i = 0; i < model.getLadakLenght(); i++) {
-            view.kiir(i + 1 + ": " + model.getLada(i).getAllitas());
+            s += i + 1 + ": " + model.getLada(i).getAllitas() + "\n";
         }
-        view.kiir("Melyik:");
-        view.kiir("A válasz " + (model.isHelyes(view.beker()) ? "jó" : "rossz"));
+        view.kiir("A válasz " + (model.isHelyes(view.beker(s + "Melyik: ")) ? "jó" : "rossz"));
     }
 }

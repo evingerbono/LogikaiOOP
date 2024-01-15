@@ -16,7 +16,8 @@ public class LadaView implements View {
     }
 
     @Override
-    public int beker() {
+    public int beker(String szoveg) {
+        System.out.print(szoveg);
         int szam = 0;
         while (szam < 1 || szam > 3) {
             szam = sc.nextInt();
