@@ -1,4 +1,6 @@
-package logikaioop;
+package View;
+
+import Controller.Controller;
 
 public class LogikaiOOP {
 
