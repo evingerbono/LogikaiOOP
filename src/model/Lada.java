@@ -1,4 +1,4 @@
-package logikaioop;
+package model;
 
 public class Lada {
 
